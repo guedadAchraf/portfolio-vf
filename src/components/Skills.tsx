@@ -19,7 +19,7 @@ const Skills: React.FC = () => {
       title: 'Langages de Programmation',
       icon: <Code size={24} />,
       skills: [
-        { name: 'Java (8, 17)', level: 5 },
+        { name: 'Java (8,11,17)', level: 5 },
         { name: 'TypeScript', level: 4 },
         { name: 'JavaScript', level: 4 },
         { name: 'Python', level: 3 },
@@ -36,7 +36,7 @@ const Skills: React.FC = () => {
         { name: 'Angular', level: 5 },
         { name: 'React', level: 3 },
         { name: 'Node.js', level: 3 },
-        { name: 'Next.js', level: 3 },
+        { name: 'Nest.js', level: 3 },
         { name: 'Django', level: 2 },
       ]
     },
@@ -59,8 +59,7 @@ const Skills: React.FC = () => {
         { name: 'Jenkins', level: 4 },
         { name: 'GitLab CI/CD', level: 4 },
         { name: 'GitHub Actions', level: 3 },
-        { name: 'Azure', level: 3 },
-        { name: 'GCP Cloud', level: 2 },
+        { name: 'AWS Amazon', level: 3 },
       ]
     },
     {

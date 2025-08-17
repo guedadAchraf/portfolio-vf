@@ -1,7 +1,22 @@
 import { Mail, Phone, ArrowDown } from 'lucide-react';
 import achrafImage from '../../assets/achraf.jpg';
+import { useState, useEffect } from 'react';
 
 const Hero = () => {
+  const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const fullText = 'Achraf Guedad';
+  
+  useEffect(() => {
+    if (currentIndex < fullText.length) {
+      const timer = setTimeout(() => {
+        setDisplayText(fullText.slice(0, currentIndex + 1));
+        setCurrentIndex(currentIndex + 1);
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex, fullText]);
+
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -12,18 +27,24 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
       <div className="container mx-auto px-4 py-16">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 my-4 md:my-8">
           <div className="md:w-1/2 mb-8 md:mb-0">
             {/* Content remains unchanged */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-slate-800 dark:text-white">
               <span className="block">Bonjour, je suis</span>
-              <span className="text-blue-600 dark:text-blue-400">Achraf Guedad</span>
+              <span className="text-blue-600 dark:text-blue-400">
+                {displayText}
+                <span className="animate-pulse">|</span>
+              </span>
             </h1>
             <h2 className="text-xl md:text-2xl font-medium mb-6 text-slate-600 dark:text-slate-300">
-              Développeur Java JEE / Angular
+            Développeur Java JEE / Angular | Devops: docker,kubernetes | Cloud: Aws 
+            Amazon 
             </h2>
             <p className="text-lg mb-8 text-slate-700 dark:text-slate-400 max-w-xl">
-              Je suis spécialisé dans le développement d'applications robustes et évolutives utilisant Java, Spring Boot et Angular. Fort d'une expérience en Devops et cloud, notamment avec docker kubernetes jenkins, azure.
+              Je suis spécialisé dans le développement d'applications robustes et évolutives utilisant Java, Spring Boot et Angular.
+              <br />
+              Fort d'une expérience en Devops et cloud, notamment avec docker kubernetes jenkins, AWS Amazon.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a href="mailto:guedad.achraf@gmail.com" className="inline-flex items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
@@ -43,7 +64,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="md:w-2/5 flex justify-center">
+          <div className="md:w-2/5 flex justify-center my-8">
             <div className="relative group">
               {/* Extra large outer decorative border */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 transform group-hover:scale-105 transition-all duration-300 w-80 h-80 -z-10 mx-auto my-auto"></div>
@@ -52,7 +73,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-white dark:bg-slate-800 m-3 w-74 h-74 -z-5 mx-auto my-auto shadow-md"></div>
               
               {/* Actual image with thick border */}
-              <div className="relative overflow-hidden rounded-full w-64 h-79 border-[30px] border-white dark:border-slate-800 shadow-lg mx-auto mt-2" id="picture">
+              <div className="relative overflow-hidden rounded-full w-64 h-79 border-[30px] border-white dark:border-slate-800 shadow-lg mx-auto mt-8 mb-4" id="picture">
                 <img 
                   src={achrafImage} 
                   alt="Achraf Guedad" 

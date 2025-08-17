@@ -37,7 +37,7 @@ const Education: React.FC = () => {
     <section id="education" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="container mx-auto px-4">
         <SectionTitle 
-          title="Education & Training" 
+          title="Formations" 
           subtitle="Academic background"
           icon={<GraduationCap className="text-blue-600 dark:text-blue-400" size={28} />}
         />
@@ -70,7 +70,7 @@ const Education: React.FC = () => {
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="text-slate-700 dark:text-slate-300">Français</span>
-                  <span className="text-blue-600 dark:text-blue-400">Bilingue</span>
+                  <span className="text-blue-600 dark:text-blue-400">Professionnel</span>
                 </div>
                 <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
                   <div className="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style={{ width: '100%' }}></div>

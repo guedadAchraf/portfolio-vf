@@ -20,7 +20,7 @@ Autonome, rigoureux et passionné par les technologies modernes, je combine mes 
  backend et frontend avec des pratiques DevOps pour assurer un cycle de développement 
  fluide et une livraison continue. Je suis également à l’aise dans des environnements 
  internationaux et je cherche activement des opportunités en télétravail,ou  hybride sur la ville 
- de Casablanca . 
+ de Casablanca,ou Rabat . 
           </p>
           
           
