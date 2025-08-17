@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Lightbulb } from 'lucide-react';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -36,8 +36,8 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
   const menuItems = [
     { id: 'about', label: 'À propos' },
     { id: 'skills', label: 'Compétences' },
-    { id: 'experience', label: 'Expérience' },
-    { id: 'education', label: 'Formation' },
+    { id: 'experience', label: 'Expériences' },
+    { id: 'education', label: 'Formations' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
             className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
             aria-label={darkMode ? "Passer en mode clair" : "Passer en mode sombre"}
           >
-            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            {darkMode ? <Lightbulb size={20} className="text-yellow-500" /> : <Moon size={20} />}
           </button>
           
           <button 
