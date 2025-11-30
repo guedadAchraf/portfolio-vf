@@ -20,10 +20,10 @@ const Hero = () => {
               <span className="text-blue-600 dark:text-blue-400">Achraf Guedad</span>
             </h1>
             <h2 className="text-xl md:text-2xl font-medium mb-6 text-slate-600 dark:text-slate-300">
-              Développeur Java JEE / Angular
+              Développeur  Full stack Java JEE (Jakarta) / Angular-React
             </h2>
             <p className="text-lg mb-8 text-slate-700 dark:text-slate-400 max-w-xl">
-              Je suis spécialisé dans le développement d'applications robustes et évolutives utilisant Java, Spring Boot et Angular. Fort d'une expérience en Devops et cloud, notamment avec docker kubernetes jenkins, azure.
+              Je suis spécialisé dans le développement d'applications robustes et évolutives utilisant Java, Spring Boot,Angular,et React (js/ts). Fort d'une expérience en Devops et cloud, notamment avec docker kubernetes jenkins, AWS AMAZON.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a href="mailto:guedad.achraf@gmail.com" className="inline-flex items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">

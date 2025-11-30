@@ -4,7 +4,7 @@ import SectionTitle from './common/SectionTitle';
 
 interface ExperienceItem {
   title: string;
-  company: string;
+  company:  string | JSX.Element;
   period: string;
   description: string[];
   technologies: string[];
@@ -13,78 +13,122 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
-      title: "Ingénieur Freelance Java Angular",
-      company: "upwork",
-      period: "Juillet 2024 - Janvier 2025",
+      title: "Ingénieur Full stack Node js (nest js) /Angular",
+      company: (
+      <span>
+        Jbujb - Marrakech{" "}
+        <a
+          href="https://www.jbujb.ma"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline"
+        >
+          www.jbujb.ma
+        </a>
+            <br />
+
+
+      </span>
+    ),
+      period: "Octobre 2025 - Présent",
       description: [
         "Participation aux ateliers et conception d'une architecture microservices scalable",
-        "Développement backend avec Spring Boot (API REST, sécurisation OAuth2/JWT, keycloak)",
-        "Développement frontend Angular avec NGRX et optimisations UI/UX",
-        "CI/CD avec jenkins, déploiement sur AWS (EC2, RDS, ecr, kubernetes)"
+        "Développement backend avec nest js  (API REST, sécurisation OAuth2/JWT, keycloak)",
+        "Développement frontend Angular avec NGRX (REDUX) et optimisations UI/UX",
+        "CI/CD avec jenkins, déploiement sur VPS"
       ],
-      technologies: ["Java 17", "Spring Boot", "Angular", "PostgreSQL", "OAuth2", "JWT", "Docker", "Kubernetes", "AWS", "GitLab CI/CD"]
+      technologies: ["Nest js ", "Node js ", "Angular", "Mongodb", "OAuth2", "JWT", "Docker", "Kubernetes", "IAAS VPS", "GitLab"]
     },
+
     {
-      title: "Ingénieur Freelance Java JEE Angular",
-      company: "SadaWeb, Marrakech",
+      title: "Ingénieur Freelance -  Java JEE React ts",
+      company: (
+      <span>
+        self employee  - Ouarzazate{" "}
+        <a
+          href="https://yakoub-5bd60.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline"
+        >
+          www.DJOCO-vercel.web.app
+        </a>
+             
+
+
+      </span> ) ,
+      period: "Juillet 2024 - Octobre 2025",
+      description: [
+        " Analyse des besoins et modélisation de la base de données RDS ",
+        "Développement backend : gestion utilisateurs/produits, API REST, Spring Security, keycloak",
+        "Développement frontend : affichage produits, gestion panier, consommation API",
+        "Initiation à GitLab CI/CD, Docker et mise en production de l'application"
+      ],
+      technologies: ["Java 17", "Spring Boot", "Angular", "RDS-MySQL", "Spring Security", "GitLab CI/CD", "Docker"]
+    },
+     
+    {
+      title: "Ingénieur  Java JEE Angular",
+      company: (
+      <span>
+        Sadaweb- Marrakech{" "}
+        <a
+          href=" https://boutique-kalidou.fr/fr/https://boutique-kalidou.fr/fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline"
+        >
+          https://boutique-kalidou.fr/fr/
+        </a>
+             
+
+
+      </span> ),
       period: "Avril 2024 - Juillet 2024",
       description: [
-        "Analyse des besoins et modélisation de la base de données MySQL",
+        "Analyse des besoins et participation à la refonte vers l'architecture microservice ",
         "Développement backend : gestion utilisateurs/produits, API REST, Spring Security, keycloak",
         "Développement frontend : affichage produits, gestion panier, consommation API",
         "Initiation à GitLab CI/CD, Docker et mise en production de l'application"
       ],
       technologies: ["Java 8", "Spring Boot", "Angular", "MySQL", "Spring Security", "GitLab CI/CD", "Docker"]
     },
+     
     {
-      title: "Ingénieur Freelance Java / Angular",
-      company: "Upwork, Marrakech",
-      period: "Octobre 2022 - Décembre 2023",
+      title: "Ingénieur Java JEE  Angular",
+      company: (
+      <span>
+        Capgemini  - Casablanca{" "}
+        <a
+          href="https://www.totalenergies.fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline"
+        >
+          https://www.totalenergies.fr/
+        </a>
+             
+
+
+      </span> ),
+      period: "Mai 2021 - Mars 2024",
       description: [
-        "Modélisation de la base de données et architecture microservices",
-        "Développement backend : API REST sécurisées, moteur de rapports comptables, automatisation avec Spring Batch, gestion des factures",
-        "Développement frontend : tableau de bord interactif, gestion avancée des factures",
-        "CI/CD, conteneurisation et déploiement sur AWS (S3, RDS)"
-      ],
-      technologies: ["Java 17", "Spring Boot", "Angular 17", "PostgreSQL", "OAuth2", "JWT", "Spring Batch", "Docker", "Kubernetes", "AWS", "Jenkins CI/CD"]
-    },
-    {
-      title: "Ingénieur Java Angular",
-      company: "Capgemini, Casablanca",
-      period: "Mai 2021 - Octobre 2022",
-      description: [
-        "Maintenance et correction d'anomalies en production et phase de test",
-        "Développement backend : nouvelles API REST avec Spring Boot",
-        "Amélioration de l'UX avec Angular et workflows automatisés",
+        "Maintenance et correction d'anomalies en production et phase de staging",
+        "Développement backend : build - nouvelles API REST avec Spring Boot",
+        "Amélioration de l'UX avec Angular ",
         "Renforcement de la sécurité avec OAuth2, JWT et gestion avancée des permissions"
       ],
       technologies: ["Java 8", "Spring Boot", "Angular", "PostgreSQL", "Spring Security"]
     },
-    {
-      title: "Ingénieur Java Angular",
-      company: "Freelance indépendant",
-      period: "Janvier 2020 - Avril 2021",
-      description: [
-        "Conception et réalisation d'une application de galerie marchande"
-      ],
-      technologies: ["Java 8", "Spring Boot", "Angular", "PostgreSQL", "GitHub", "GitHub Actions"]
-    },
-    {
-      title: "Ingénieur Java Angular",
-      company: "Freelance indépendant",
-      period: "Janvier 2019 - Décembre 2019",
-      description: [
-        "Conception et réalisation d'une application de gestion d'une agence de voyage"
-      ],
-      technologies: ["Java 8", "Spring Boot", "Angular", "PostgreSQL"]
-    }
+   
+  
   ];
 
   return (
     <section id="experience" className="py-20 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-4">
         <SectionTitle 
-          title="Professional Experience" 
+          title="experiences professionelles" 
           subtitle="My career journey"
           icon={<Briefcase className="text-blue-600 dark:text-blue-400" size={28} />}
         />
@@ -98,7 +142,7 @@ const Experience: React.FC = () => {
               >
                 <div className="flex flex-col mb-2">
                   <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-1">{exp.title}</h3>
-                  <p className="text-lg font-medium text-slate-700 dark:text-slate-300 mb-2">{exp.company}</p>
+                  <div className="text-lg font-medium text-slate-700 dark:text-slate-300 mb-2">{exp.company}</div>
                   <span className="text-blue-600 dark:text-blue-400 font-medium mb-4">{exp.period}</span>
                 </div>
                 

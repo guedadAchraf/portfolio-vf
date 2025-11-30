@@ -42,7 +42,7 @@ function App() {
 
   // Update document title
   useEffect(() => {
-    document.title = 'Achraf Guedad | Java JEE / Angular Developer';
+    document.title = 'Achraf Guedad | Java JEE (Jakarta) / Angular -React Developer';
   }, []);
 
   return (
