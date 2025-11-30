@@ -19,13 +19,8 @@ const About: React.FC = () => {
 Autonome, rigoureux et passionné par les technologies modernes, je combine mes compétences
  backend et frontend avec des pratiques DevOps pour assurer un cycle de développement 
  fluide et une livraison continue. Je suis également à l’aise dans des environnements 
-<<<<<<< HEAD
  internationaux et je cherche activement des opportunités en télétravail,ou  hybride sur la ville 
  de Casablanca,ou Rabat . 
-=======
- internationaux et je cherche activement des opportunités sur site,en télétravail,ou hybride sur la ville 
- de Casablanca ou Rabat. 
->>>>>>> 30-11-2025
           </p>
           
           

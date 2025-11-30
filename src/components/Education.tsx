@@ -37,11 +37,7 @@ const Education: React.FC = () => {
     <section id="education" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="container mx-auto px-4">
         <SectionTitle 
-<<<<<<< HEAD
           title="Formations" 
-=======
-          title="Formation" 
->>>>>>> 30-11-2025
           subtitle="Academic background"
           icon={<GraduationCap className="text-blue-600 dark:text-blue-400" size={28} />}
         />
