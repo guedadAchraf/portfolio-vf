@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
         { name: 'Spring Boot', level: 5 },
         { name: 'Spring Cloud', level: 4 },
         { name: 'Angular', level: 5 },
-        { name: 'React', level: 3 },
+        { name: 'React', level: 4 },
         { name: 'Node.js', level: 3 },
         { name: 'Nest.js', level: 3 },
         { name: 'Django', level: 2 },
@@ -69,6 +69,7 @@ const Skills: React.FC = () => {
         { name: 'Microservices', level: 4 },
         { name: 'Monolithique', level: 5 },
         { name: 'Multi-modules', level: 5 },
+         { name: 'SOA', level: 2 },
      
       ]
     },

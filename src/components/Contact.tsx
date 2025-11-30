@@ -37,8 +37,13 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-4">
         <SectionTitle 
+<<<<<<< HEAD
           title="Contact" 
           subtitle="Coordonnées"
+=======
+          title="Contacter Moi" 
+          subtitle="Let's get in touch"
+>>>>>>> 30-11-2025
           icon={<Mail className="text-blue-600 dark:text-blue-400" size={28} />}
         />
         
@@ -51,7 +56,11 @@ const Contact: React.FC = () => {
                 <Phone size={20} />
               </div>
               <div>
+<<<<<<< HEAD
                 <h4 className="text-lg font-medium text-slate-800 dark:text-white">Numéro de téléphone</h4>
+=======
+                <h4 className="text-lg font-medium text-slate-800 dark:text-white">Téléphone</h4>
+>>>>>>> 30-11-2025
                 <a href="tel:+212617611753" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   +212 6 17 61 17 53
                 </a>

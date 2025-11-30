@@ -13,7 +13,7 @@ const Education: React.FC = () => {
   const education: EducationItem[] = [
     {
       institution: "Board Infinity",
-      degree: "Frontend Development using Angular",
+      degree: " Certification - Frontend Development using Angular",
       period: "2023",
       details: "Certification  en développement web,avec Angular"
     },
@@ -37,7 +37,11 @@ const Education: React.FC = () => {
     <section id="education" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="container mx-auto px-4">
         <SectionTitle 
+<<<<<<< HEAD
           title="Formations" 
+=======
+          title="Formation" 
+>>>>>>> 30-11-2025
           subtitle="Academic background"
           icon={<GraduationCap className="text-blue-600 dark:text-blue-400" size={28} />}
         />
@@ -83,17 +87,17 @@ const Education: React.FC = () => {
                   <span className="text-blue-600 dark:text-blue-400">Professionnel</span>
                 </div>
                 <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
-                  <div className="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style={{ width: '80%' }}></div>
+                  <div className="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style={{ width: '90%' }}></div>
                 </div>
               </div>
               
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="text-slate-700 dark:text-slate-300">Allemand</span>
-                  <span className="text-blue-600 dark:text-blue-400">Débutant</span>
+                  <span className="text-blue-600 dark:text-blue-400">Débutant A1</span>
                 </div>
                 <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
-                  <div className="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style={{ width: '30%' }}></div>
+                  <div className="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style={{ width: '20%' }}></div>
                 </div>
               </div>
             </div>

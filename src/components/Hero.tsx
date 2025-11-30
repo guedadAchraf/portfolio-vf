@@ -38,6 +38,7 @@ const Hero = () => {
               </span>
             </h1>
             <h2 className="text-xl md:text-2xl font-medium mb-6 text-slate-600 dark:text-slate-300">
+<<<<<<< HEAD
             Développeur Java JEE / Angular | Devops: docker,kubernetes | Cloud: Aws 
             Amazon 
             </h2>
@@ -45,6 +46,12 @@ const Hero = () => {
               Je suis spécialisé dans le développement d'applications robustes et évolutives utilisant Java, Spring Boot et Angular.
               <br />
               Fort d'une expérience en Devops et cloud, notamment avec docker kubernetes jenkins, AWS Amazon.
+=======
+              Développeur  Full stack Java JEE (Jakarta) / Angular-React
+            </h2>
+            <p className="text-lg mb-8 text-slate-700 dark:text-slate-400 max-w-xl">
+              Je suis spécialisé dans le développement d'applications robustes et évolutives utilisant Java, Spring Boot,Angular,et React (js/ts). Fort d'une expérience en Devops et cloud, notamment avec docker kubernetes jenkins, AWS AMAZON.
+>>>>>>> 30-11-2025
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a href="mailto:guedad.achraf@gmail.com" className="inline-flex items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">

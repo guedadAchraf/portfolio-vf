@@ -11,7 +11,7 @@ import freelanceLogo from '../../assets/logos/freelance.svg';
 
 interface ExperienceItem {
   title: string;
-  company: string;
+  company:  string | JSX.Element;
   period: string;
   description: string[];
   technologies: string[];
@@ -34,6 +34,7 @@ const Experience: React.FC = () => {
       technologies: ["Java", "Spring Boot", "Angular", "Web Development"],
       logo: freelanceLogo
     },
+
     {
       title: "Ingénieur Java JEE Angular",
       company: "SadaWeb, Marrakech",
@@ -53,6 +54,7 @@ const Experience: React.FC = () => {
       ],
       logo: sadawebLogo
     },
+     
     {
       title: "Ingénieur Java Angular",
       company: "Orange Obs, Rabat Sale Al Jadida",
